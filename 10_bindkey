@@ -1,2 +1,5 @@
 bindkey "${key[Home]}" beginning-of-line
 bindkey "${key[End]}" end-of-line
+bindkey -v
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
