@@ -1,5 +1,8 @@
 bindkey "${key[Home]}" beginning-of-line
 bindkey "${key[End]}" end-of-line
-bindkey -v
+# Sets all keybindings to standard GNU Emacs-like bindings :
+bindkey -e
+# use bindkey -v for 'standard vi-like bindings'.
+
+# delete key sends delete on mac os X : 
 bindkey '\e[3~' delete-char
-bindkey '^R' history-incremental-search-backward
