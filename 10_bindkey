@@ -1,8 +1,10 @@
 bindkey "${key[Home]}" beginning-of-line
 bindkey "${key[End]}" end-of-line
 # Sets all keybindings to standard GNU Emacs-like bindings :
-bindkey -e
-# use bindkey -v for 'standard vi-like bindings'.
+bindkey -v
+
+# I really miss my bck-i-search in vi mode, so :
+bindkey '^R' history-incremental-search-backward
 
 # delete key sends delete on mac os X : 
 bindkey '\e[3~' delete-char
